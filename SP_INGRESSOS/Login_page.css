@@ -45,7 +45,7 @@ body{
 }
 /*Configurando estilos...*/
 .login-box-style{
-    background-image: url("/Images/login_background.png");
+    background-image: url("Images/login_background.png");
     /*Alterar para computadores no Media Querie*/
     background-size: 50vh;
     padding: 20px;
