@@ -45,7 +45,7 @@ body{
 }
 /*Configurando estilos...*/
 .login-box-style{
-    background-image: url("/Images/login_background.png");
+    background-image: url("Images/login_background.png");
     /*Alterar para computadores no Media Querie*/
     background-size: 50vh;
     padding: 20px;
@@ -97,7 +97,7 @@ body{
 /*Estilizando ícone para ver a senha*/
 #see_password_button{
     display: none;
-    background-image: url("/Images/Icons/SEE_PASSWORD_ICONS_SEE.jpg");
+    background-image: url("Images/Icons/SEE_PASSWORD_ICONS_SEE.jpg");
     background-position: center;
     background-size: 50px;
     background-repeat: no-repeat;
