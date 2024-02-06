@@ -13,26 +13,34 @@
     <body>
         <div class="box center">
             <div class="logo">
-                <img src="Images/SP_INGRESSOS_LOGO.png" width="190px" height="75px">
+                <img src="/Images/SP_INGRESSOS_LOGO.png" width="190px" height="75px">
             </div>
             <div class="box login-box-style">
 
                 <!--Informações de login-->
-                <div class="box login-input-box-style">
-                    <!--E-mail-->
-                    <input type="email" class="login-input" placeholder="E-mail">
-                    <!--Senha-->
-                    <input type="password" class="login-input" placeholder="Senha">
-                </div>
-                <!--Botão de login--> 
-                <input value="ENTRAR" class="login-button-style" type="button">
-
+                <form class="box" id="login-form">    
+                    <div class="box login-input-box-style">
+                        <!--E-mail-->
+                        <input type="email" class="login-input" placeholder="E-mail">
+                        <!--Senha-->
+                        <input onfocus="See_Password_Icon()" id="password_input" type="password" class="login-input" placeholder="Senha">
+                        <input type="button" onclick="See_password()" id="see_password_button">
+                    </div>
+                    <!--Botão de login--> 
+                    <input value="ENTRAR" class="login-button-style" type="submit">
+                </form>    
                 <!--Botão de registro-->
-                <input value="Cadastrar em vez disso" type="button" class="register-button register-button-style">
+                <a target="_blank" href="/Register_Page/Register_page.html">
+                    <input value="Cadastrar em vez disso" type="button" class="register-button register-button-style">
+                </a>
             </div>
         </div>
+
+        <!--Linkando o SCRIPT-->
+        <script src="Login_page.js">
+        </script>
     </body>
-    <!--Linkando o SCRIPT-->
+</html>
     <script src="Login_page.js">
 
     </script>
