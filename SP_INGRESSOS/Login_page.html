@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla+One|Dosis">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!--Link para Estilização CSS-->
         <link rel="stylesheet" href="Login_page.css">
         <!--Título-->
@@ -24,13 +25,13 @@
                         <input type="email" class="login-input" placeholder="E-mail">
                         <!--Senha-->
                         <input onfocus="See_Password_Icon()" id="password_input" type="password" class="login-input" placeholder="Senha">
-                        <input type="button" onclick="See_password()" id="see_password_button">
+                        <button type="button" onclick="See_password()" id="see_password_button" class="material-icons">visibility</button>
                     </div>
                     <!--Botão de login--> 
                     <input value="ENTRAR" class="login-button-style" type="submit">
                 </form>    
                 <!--Botão de registro-->
-                <a target="_blank" href="/Register_Page/Register_page.html">
+                <a target="_blank" href="Register_Page/Register_page.html">
                     <input value="Cadastrar em vez disso" type="button" class="register-button register-button-style">
                 </a>
             </div>
