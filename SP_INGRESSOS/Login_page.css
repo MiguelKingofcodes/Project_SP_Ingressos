@@ -97,16 +97,14 @@ body{
 /*Estilizando ícone para ver a senha*/
 #see_password_button{
     display: none;
-    background-image: url("Images/Icons/SEE_PASSWORD_ICONS_SEE.jpg");
-    background-position: center;
-    background-size: 50px;
-    background-repeat: no-repeat;
-    padding: 1px;
+    width: 100%;
+    font-size: 30px;
+    text-align: left;
+    background: none;
+    border: none;
+    color: white;
 }
+
 
 /*Configurando Media queries...
 @media screen and (min-width: )*/
-
-
-
-
