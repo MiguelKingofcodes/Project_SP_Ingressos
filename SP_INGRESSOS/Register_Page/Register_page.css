@@ -1,0 +1,39 @@
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.center{
+    margin: 30vw;
+}
+.box{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.register-box{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Definindo estilização: */
+.phone_number_field-style{
+    margin: 0 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.phone_number_field-style select{
+    width: 50px;
+}
+.phone_number_field-style input{
+    width: 110px;
+}
