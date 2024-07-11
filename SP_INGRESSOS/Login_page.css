@@ -31,13 +31,14 @@ body{
 
 }*/
 .login .login-input{
-    margin-bottom: 10px;
+    /*margin-bottom: 10px;*/
     border-radius: 10px;
     padding: 2px;
     border: none;
     outline: none;
     
 }
+
 
 .register-button{
     margin-top: 10%;
@@ -69,6 +70,11 @@ body{
     width: 170px;
     font-family: Oswald;
 }
+
+.login-input-box-style input#password-input{
+    margin-bottom: 0px;
+}
+
 .login-button-style{
     font-family: Oswald;
     font-size: 100%;
@@ -83,6 +89,7 @@ body{
 .login-button-style:hover{
     color: yellow;
     box-shadow: 2px 2px yellow;
+
 }
 .register-button-style{
     font-family: Dosis;
@@ -90,6 +97,7 @@ body{
     color: white;
     border: none;
     border-radius: 10px; 
+
 }
 .register-button-style:hover{
     box-shadow: 2px 2px white; 
@@ -97,12 +105,15 @@ body{
 /*Estilizando ícone para ver a senha*/
 #see_password_button{
     display: none;
-    width: 100%;
     font-size: 30px;
-    text-align: left;
+    text-align: right;
     background: none;
     border: none;
-    color: white;
+    color: Black;
+    position: absolute;
+    transform: translateY(60px) translateX(70px);
+
+
 }
 
 
