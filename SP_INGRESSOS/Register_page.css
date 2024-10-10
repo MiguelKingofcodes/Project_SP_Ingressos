@@ -6,7 +6,6 @@ body{
     align-items: center;
     background-image: url('Images/register_background.png');
     background-repeat: no-repeat;
-    background-size: 100%;
     width: 100vw;
     height: 100vh;
 }
