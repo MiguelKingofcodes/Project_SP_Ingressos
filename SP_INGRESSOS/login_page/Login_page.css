@@ -1,0 +1,121 @@
+/*Importando fontes*/
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One|Dosis|Oswald|Bebas+Neue|Chau+Philomene");
+
+body{
+    font-family: Fjalla One;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*Background Configurations...*/
+    background-image: linear-gradient(to top, rgb(46, 13, 13), rgb(11, 1, 1));
+    height: 100vh;
+}
+.logo {
+    margin: 0 0 60px 0;
+    padding: 0;
+}
+.center{
+    /*Configuração boa para mobile*/
+    margin: 20vw;
+}
+.box{
+    padding: 0; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 3%;
+}
+/*.main-inputs{
+
+}*/
+.login .login-input{
+    /*margin-bottom: 10px;*/
+    border-radius: 10px;
+    padding: 2px;
+    border: none;
+    outline: none;
+    
+}
+
+
+.register-button{
+    margin-top: 10%;
+    padding: 5px;
+}
+/*Configurando estilos...*/
+.login-box-style{
+    background-image: url("Images/login_background.png");
+    /*Alterar para computadores no Media Querie*/
+    background-size: 50vh;
+    padding: 20px;
+    border-radius: 30px;
+} 
+
+.login-input-box-style{
+    background-color: rgb(48, 20, 20);
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 15px;
+}
+.login-input-box-style input{
+    margin: 5% 0;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    padding: 5px;
+    /*Alterar com media Querie*/
+    width: 170px;
+    font-family: Oswald;
+}
+
+.login-input-box-style input#password-input{
+    margin-bottom: 0px;
+}
+
+.login-button-style{
+    font-family: Oswald;
+    font-size: 100%;
+    font-style:inherit;
+    color: White;
+    background-color: rgb(177, 15, 29);
+    border: none;
+    border-radius: 10px;
+    padding: 5% 20%;
+
+}
+.login-button-style:hover{
+    color: yellow;
+    box-shadow: 2px 2px yellow;
+
+}
+.register-button-style{
+    font-family: Dosis;
+    background-color: rgb(9, 68, 128);
+    color: white;
+    border: none;
+    border-radius: 10px; 
+
+}
+.register-button-style:hover{
+    box-shadow: 2px 2px white; 
+}
+/*Estilizando ícone para ver a senha*/
+#see_password_button{
+    display: none;
+    font-size: 30px;
+    text-align: right;
+    background: none;
+    border: none;
+    color: Black;
+    position: absolute;
+    transform: translateY(60px) translateX(70px);
+
+
+}
+
+
+/*Configurando Media queries...
+@media screen and (min-width: )*/

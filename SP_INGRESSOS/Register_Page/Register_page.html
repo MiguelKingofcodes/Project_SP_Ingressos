@@ -13,19 +13,21 @@
     <body>
 
             <div class="box center">
-                
+                <div class="logo">
+                    <img src="Images/SP_INGRESSOS_LOGO.png" width="190px" height="75px">
+                </div>
                 <!--Informações de cadastro -->
                <div class="center register-box">
                     <!--Nome completo-->
-                    <input type="text">
-                    <input type="text">
+                    <input id="nameInput" type="text" placeholder="Nome:">
+                    <input id="lastNameInput" type="text" placeholder="Sobrenome:">
                     <!--E-mail-->
-                    <input type="email">
+                    <input id="emailInput" type="email" placeholder="E-mail:">
                     
                     <!--Senha-->
-                    <input type="password">
-                    <!--confirmar senha-->
-                    <input type="password">
+                    <input id="passwordInput" type="password" placeholder="Senha:">
+                    <!--Confirmar senha-->
+                    <input id="confirmPasswordInput" type="password" placeholder="Confirmar senha:">
                     
                     <!--Número de tel--> 
                     <div class="phone_number_field-style">
@@ -36,11 +38,12 @@
                             <option>+19</option>
                             <option>+44</option>
                         </select>
-                        <input type="tel">
+                        <input type="tel" placeholder="Telefone:">
                     </div>
             </div>
                <!--Botão de CONFIRMAÇÃO-->
-               <input value="CONTINUAR" type="button">
+
+               <input value="CONTINUAR" type="button" class="Entry-button-style">
             </div>
         </div>
     </body>
