@@ -1,165 +1,167 @@
 /* Resetando margens e preenchimentos */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Corpo da página */
-  body {
-    min-height: 100vh; /* Garantir que o corpo ocupe toda a altura da tela */
-    background-image: url("Images/initial_page_images/initial_background.jpg");
-    background-size: cover;
-    background-position: center;
-    font-family: 'Dosis', sans-serif;
-    color: #fff;
-  }
-  
-  /* Cabeçalho */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+  min-height: 100vh; /* Garantir que o corpo ocupe toda a altura da tela */
+  background-image: url("image/initial_background.jpg");
+  background-size: cover;
+  background-position: center;
+  font-family: 'Dosis', sans-serif;
+  color: #fff;
+  padding-bottom: 70px; /* Espaço para o footer fixo */
+}
+
+/* Cabeçalho */
+header {
+  background-color: #3F1A1A; /* Cor de fundo escura para o cabeçalho */
+  color: #fff;
+  padding: 2rem; /* Espaçamento interno */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+/* Foto do usuário */
+header #UserPhoto {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+/* Dados do usuário */
+header #UserData {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header #UserData a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+header #UserData a:hover {
+  text-decoration: underline;
+}
+
+/* Seções de cinema */
+section {
+  padding: 2rem;
+  text-align: center;
+}
+
+section h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.cinema-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Layout responsivo */
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+  max-width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card button {
+  background-color: #3F1A1A;
+  color: #fff;
+  padding: 0.8rem;
+  width: 100%;
+  border: none;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+  background-color: #9B2D2D;
+}
+
+/* Rodapé */
+footer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  position: fixed; /* Fixando o rodapé na parte inferior */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 1rem 0;
+  z-index: 1000; /* Garante que o footer fique acima de outros elementos */
+}
+
+footer button {
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+footer button:hover {
+  background-color: #fff;
+  transform: scale(1.1);
+}
+
+footer button img {
+  width: 20px;
+  height: 20px;
+  filter: invert(1);
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
   header {
-    background-color: #3F1A1A; /* Cor de fundo escura para o cabeçalho */
-    color: #fff;
-    padding: 2rem; /* Espaçamento interno */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    position: relative;
-  }
-  
-  /* Foto do usuário */
-  header #UserPhoto {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 1rem;
-  }
-  
-  /* Dados do usuário */
-  header #UserData {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  header #UserData a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0.5rem 0;
-    font-size: 1rem;
-  }
-  
-  header #UserData a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Seções de cinema */
-  section {
-    padding: 2rem;
-    text-align: center;
-  }
-  
-  section h2 {
-    margin-bottom: 1.5rem;
-    font-size: 1.8rem;
-    font-weight: bold;
-  }
-  
-  .cinema-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Layout responsivo */
-    gap: 1.5rem;
-    justify-items: center;
-  }
-  
-  .card {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: 100%;
-    max-width: 300px;
-    transition: transform 0.3s ease;
-  }
-  
-  .card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-  }
-  
-  .card button {
-    background-color: #3F1A1A;
-    color: #fff;
-    padding: 0.8rem;
-    width: 100%;
-    border: none;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .card button:hover {
-    background-color: #9B2D2D;
-  }
-  
-  /* Rodapé */
-  footer {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background-color: #333;
-    padding: 1rem 0;
-  }
-  
-  footer button {
-    background-color: transparent;
-    border: 2px solid #fff;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-  }
-  
-  footer button:hover {
-    background-color: #fff;
-    transform: scale(1.1);
-  }
-  
-  footer button img {
-    width: 20px;
-    height: 20px;
-    filter: invert(1);
-  }
-  
-  /* Responsividade */
-  @media screen and (max-width: 768px) {
-    header {
       padding: 1.5rem;
-    }
-  
-    header #UserPhoto {
+  }
+
+  header #UserPhoto {
       width: 100px;
       height: 100px;
-    }
-  
-    section h2 {
+  }
+
+  section h2 {
       font-size: 1.5rem;
-    }
-  
-    footer button {
+  }
+
+  footer button {
       width: 35px;
       height: 35px;
-    }
   }
-  
+}
