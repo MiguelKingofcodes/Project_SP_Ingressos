@@ -107,6 +107,49 @@ section h2 {
   background-color: #9B2D2D;
 }
 
+/* As seções do carrossel */
+.cinema-cards {
+  display: flex;
+  overflow: hidden;
+  width: 100%; /* Largura total */
+}
+
+.cinema-cards .card {
+  flex-shrink: 0; /* Impede que os cards encolham */
+  width: 100%; /* Cada card ocupa 100% da largura do contêiner */
+  transition: transform 0.5s ease-in-out; /* Transição suave */
+}
+
+/* Botões de controle para o carrossel */
+button {
+  background-color: #3F1A1A;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #9B2D2D;
+}
+
+/* Estilo para os botões de navegação (anterior e próximo) */
+section .prevButton,
+section .nextButton {
+  background-color: #3F1A1A;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+section .prevButton:hover,
+section .nextButton:hover {
+  background-color: #9B2D2D;
+}
+
 /* Rodapé */
 footer {
   display: flex;
@@ -148,20 +191,20 @@ footer button img {
 /* Responsividade */
 @media screen and (max-width: 768px) {
   header {
-      padding: 1.5rem;
+    padding: 1.5rem;
   }
 
   header #UserPhoto {
-      width: 100px;
-      height: 100px;
+    width: 100px;
+    height: 100px;
   }
 
   section h2 {
-      font-size: 1.5rem;
+    font-size: 1.5rem;
   }
 
   footer button {
-      width: 35px;
-      height: 35px;
+    width: 35px;
+    height: 35px;
   }
 }
