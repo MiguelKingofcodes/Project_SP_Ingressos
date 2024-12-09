@@ -9,13 +9,12 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="Initial_page.css">
     <title>Página Inicial</title>
-</head>s
+</head>
 
 <body>
     <!-- Cabeçalho -->
     <header>
         <div class="topo">
-            <!-- Dados do Usuário -->
             <img id="UserPhoto" src="image/foto_de_perfil.jpg" alt="Foto de Perfil">
             <div id="UserData">
                 <a href="#user">USER#341</a>
@@ -24,79 +23,117 @@
         </div>
     </header>
 
-   <!-- Cinemas em São Paulo -->
-<section class="cinema_sp">
-    <h2>Cinemas em São Paulo</h2>
-    <div class="cinema-cards">
-        <div class="card">
-            <img src="image/thumb_image1.jpg" alt="Cinemark">
-            <button><strong>Cinemark</strong></button>
-        </div>
-        <div class="card">
-            <img src="image/thumb_image2.jpg" alt="Cinemax">
-            <button><strong>Cinemax</strong></button>
-        </div>
-        <div class="card">
-            <img src="image/thumb_image3.jpg" alt="Kinoplex">
-            <button><strong>Kinoplex</strong></button>
-        </div>
-        <div class="card">
-            <img src="image/thumb_image4.jpg" alt="Cinépolis">
-            <button><strong>Cinépolis</strong></button>
-        </div>
-    </div>
-    <!-- Botões de controle para este carrossel -->
-    <button class="prevButton">Anterior</button>
-    <button class="nextButton">Próximo</button>
-</section>
+    <!-- Cinemas em São Paulo -->
+    <section class="cinema_sp">
+        <h2>Cinemas em São Paulo</h2>
+        <div class="slider-container">
+            <ul class="slider">
+                <li>
+                    <div class="card">
+                        <img src="image/thumb_image1.jpg" alt="Cinemark">
+                        <button><strong>Cinemark</strong></button>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <img src="image/thumb_image2.jpg" alt="Cinemax">
+                        <button><strong>Cinemax</strong></button>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <img src="image/thumb_image3.jpg" alt="Kinoplex">
+                        <button><strong>Kinoplex</strong></button>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <img src="image/thumb_image4.jpg" alt="Cinépolis">
+                        <button><strong>Cinépolis</strong></button>
+                    </div>
+                </li>
+            </ul>
 
-<!-- Cinemas Custo-Benefício -->
-<section class="custo_beneficio">
-    <h2>Cinemas Custo-Benefício</h2>
-    <div class="cinema-cards">
-        <div class="card">
-            <img src="image/thumb_image1.jpg" alt="Cinemark">
-            <button><strong>Cinemark</strong></button>
-        </div>
-        <div class="card">
-            <img src="image/thumb_image2.jpg" alt="Cinemax">
-            <button><strong>Cinemax</strong></button>
-        </div>
-    </div>
-    <!-- Botões de controle para este carrossel -->
-    <button class="prevButton">Anterior</button>
-    <button class="nextButton">Próximo</button>
-</section>
+            <button class="slider-nav slider-prev">&#10094;</button>
+            <button class="slider-nav slider-next">&#10095;</button>
 
-<!-- Cinemas Acima de 7 Estrelas -->
-<section class="7estrelas">
-    <h2>Cinemas Acima de 7 <i>Estrelas</i></h2>
-    <div class="cinema-cards">
-        <div class="card">
-            <img src="image/thumb_image2.jpg" alt="Cinemax">
-            <button><strong>Cinemax</strong></button>
+            <div class="slider-indicators">
+                <button class="active"></button>
+                <button></button>
+                <button></button>
+                <button></button>
+            </div>
         </div>
-        <div class="card">
-            <img src="image/thumb_image3.jpg" alt="Kinoplex">
-            <button><strong>Kinoplex</strong></button>
-        </div>
-        <div class="card">
-            <img src="image/thumb_image4.jpg" alt="Cinépolis">
-            <button><strong>Cinépolis</strong></button>
-        </div>
-    </div>
-    <!-- Botões de controle para este carrossel -->
-    <button class="prevButton">Anterior</button>
-    <button class="nextButton">Próximo</button>
-</section>
+    </section>
 
+    <!-- Cinemas Custo-Benefício -->
+    <section class="custo_beneficio">
+        <h2>Cinemas Custo-Benefício</h2>
+        <div class="slider-container">
+            <ul class="slider">
+                <li>
+                    <div class="card">
+                        <img src="image/thumb_image1.jpg" alt="Cinemark">
+                        <button><strong>Cinemark</strong></button>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <img src="image/thumb_image2.jpg" alt="Cinemax">
+                        <button><strong>Cinemax</strong></button>
+                    </div>
+                </li>
+            </ul>
+
+            <button class="slider-nav slider-prev">&#10094;</button>
+            <button class="slider-nav slider-next">&#10095;</button>
+
+            <div class="slider-indicators">
+                <button class="active"></button>
+                <button></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cinemas Acima de 7 Estrelas -->
+    <section class="7estrelas">
+        <h2>Cinemas Acima de 7 <i>Estrelas</i></h2>
+        <div class="slider-container">
+            <ul class="slider">
+                <li>
+                    <div class="card">
+                        <img src="image/thumb_image2.jpg" alt="Cinemax">
+                        <button><strong>Cinemax</strong></button>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <img src="image/thumb_image3.jpg" alt="Kinoplex">
+                        <button><strong>Kinoplex</strong></button>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <img src="image/thumb_image4.jpg" alt="Cinépolis">
+                        <button><strong>Cinépolis</strong></button>
+                    </div>
+                </li>
+            </ul>
+
+            <button class="slider-nav slider-prev">&#10094;</button>
+            <button class="slider-nav slider-next">&#10095;</button>
+
+            <div class="slider-indicators">
+                <button class="active"></button>
+                <button></button>
+                <button></button>
+            </div>
+        </div>
+    </section>
 
     <!-- Rodapé Interativo -->
     <footer>
-        <button>
-            <link rel="stylesheet"
-                href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=local_mall" />
-        </button>
+        <button><i class="material-icons">local_mall</i></button>
         <button><img src="" alt="Ícone 2"></button>
         <button><img src="" alt="Ícone 3"></button>
         <button><img src="" alt="Ícone 4"></button>
