@@ -4,7 +4,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url('Images/register_background.png');
+    background-image: url('/SP_INGRESSOS/Images/register_background.png');
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
