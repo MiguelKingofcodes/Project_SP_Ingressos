@@ -18,7 +18,7 @@ body{
 }
 .center{
     /*Configuração boa para mobile*/
-    margin: 20vw;
+    margin-top: 5vh;
 }
 .box{
     padding: 0; 
@@ -44,11 +44,11 @@ body{
     margin-top: 10%;
     padding: 5px;
 }
-/*Configurando estilos...*/
+/*Configurando estilos...*/ 
 .login-box-style{
-    background-image: url("/SP_INGRESSOS/Images/login_background.png");
+    background-image: url("/Images/login_background.png");
     /*Alterar para computadores no Media Querie*/
-    background-size: 50vh;
+    background-size: cover;
     padding: 20px;
     border-radius: 30px;
 } 
